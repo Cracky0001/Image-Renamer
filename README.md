@@ -33,10 +33,6 @@ Chill, before anything gets renamed, the tool creates a backup of your images. F
 
 This tool is for the brave. Use it wisely and at your own risk. We're not responsible for any lost or damaged data. Get this straight before you dive in!
 
-### License
-
-This tool is released under the MIT License. Check out the LICENSE file for more details.
-
 ### Contact
 
 Cracky (https://github.com/Cracky0001) - The dude behind this masterpiece.
