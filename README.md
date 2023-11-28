@@ -12,7 +12,7 @@ Make sure you've got .NET on your machine. No .NET, no party.
 
 ### Installation
 
-1. Head over to the releases section at `URL SOON` and download the latest `.exe`.
+1. Head over to the [releases](https://github.com/Cracky0001/Image-Renamer/releases)` and download the latest `.exe`.
 2. Find where you saved it and double-click to start the magic.
 
 ### Usage
