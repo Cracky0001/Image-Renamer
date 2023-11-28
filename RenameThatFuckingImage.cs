@@ -7,7 +7,7 @@ class RenameThatFuckingImage
 {
     static void Main()
     {
-        string Version = "1.5.2";
+        string Version = "1.5.3";
         string Logo = @"
     ____                              ____                                      
    /  _/___ ___  ____ _____ ____     / __ \___  ____  ____ _____ ___  ___  _____
