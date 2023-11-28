@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
-using System.Threading;
+using System.Threading; 
 
 class RenameThatFuckingImage
 {
     static void Main()
     {
         string Version = "1.5.2";
-        string ACSIIArt = @"
+        string Logo = @"
     ____                              ____                                      
    /  _/___ ___  ____ _____ ____     / __ \___  ____  ____ _____ ___  ___  _____
    / // __ `__ \/ __ `/ __ `/ _ \   / /_/ / _ \/ __ \/ __ `/ __ `__ \/ _ \/ ___/
@@ -20,7 +20,6 @@ class RenameThatFuckingImage
         string directoryPath = "./";
         string Username = Environment.UserName;
         Username = char.ToUpper(Username[0]) + Username.Substring(1);
-
         string[] imageExtensions = { ".png", ".jpeg", ".jpg" };
         string[] imageFiles = imageExtensions
             .SelectMany(ext => Directory.GetFiles(directoryPath, "*" + ext))
@@ -29,7 +28,7 @@ class RenameThatFuckingImage
         if (imageFiles.Length == 0)
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(ACSIIArt);
+            Console.WriteLine(Logo);
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Hello {Username}! There are no images in this folder.");
             Console.ForegroundColor = ConsoleColor.White;
@@ -38,18 +37,19 @@ class RenameThatFuckingImage
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine(ACSIIArt);
+                Console.WriteLine(Logo);
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Enter the path to the folder:");
                 directoryPath = Console.ReadLine();
                 imageFiles = imageExtensions
                     .SelectMany(ext => Directory.GetFiles(directoryPath, "*" + ext))
                     .ToArray();
+                
                 if (imageFiles.Length == 0)
                 {
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine(ACSIIArt);
+                    Console.WriteLine(Logo);
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"Hello {Username}! There are no images in this folder.");
                     Console.ForegroundColor = ConsoleColor.White;
@@ -62,7 +62,7 @@ class RenameThatFuckingImage
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine(ACSIIArt);
+                Console.WriteLine(Logo);
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Program will be closed in 3 seconds...");
                 Thread.Sleep(3000);
@@ -72,7 +72,7 @@ class RenameThatFuckingImage
 
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine(ACSIIArt);
+        Console.WriteLine(Logo);
         Console.WriteLine($"Hello {Username}! Following images will be renamed:");
         Console.ForegroundColor = ConsoleColor.White;
         foreach (string imagePath in imageFiles)
@@ -81,13 +81,14 @@ class RenameThatFuckingImage
         }
 
         Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Images: " + imageFiles.Length);
         Console.WriteLine("Are you sure you want to rename these images? (y/n)");
 
         if (Console.ReadLine() != "y")
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(ACSIIArt);
+            Console.WriteLine(Logo);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Program will be closed in 3 seconds...");
             Thread.Sleep(3000);
@@ -97,7 +98,7 @@ class RenameThatFuckingImage
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(ACSIIArt);
+            Console.WriteLine(Logo);
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("Renaming images...");
             Thread.Sleep(1500);
@@ -112,6 +113,9 @@ class RenameThatFuckingImage
             File.Copy(imagePath, backupFilePath, true);
         }
 
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine(Logo);
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Backup created.");
         Console.WriteLine("Backup-Path: " + backupFolderPath);
@@ -137,6 +141,9 @@ class RenameThatFuckingImage
             File.SetLastWriteTimeUtc(newFilePath, desiredDateTime);
         }
 
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine(Logo);
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Successfully renamed images.");
         Console.WriteLine("The Creation-Date and Last-Write-Date of the images has been set to 22.02.2077 22:22:00 UTC.");
