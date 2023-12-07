@@ -1,13 +1,13 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using System.Threading; 
+using System.Threading;
 
-class RenameThatFuckingImage
+class RenameThatFreakingImage
 {
     static void Main()
     {
-        string Version = "1.5.3";
+        string Version = "1.5.4";
         string Logo = @"
     ____                              ____                                      
    /  _/___ ___  ____ _____ ____     / __ \___  ____  ____ _____ ___  ___  _____
@@ -44,7 +44,7 @@ class RenameThatFuckingImage
                 imageFiles = imageExtensions
                     .SelectMany(ext => Directory.GetFiles(directoryPath, "*" + ext))
                     .ToArray();
-                
+
                 if (imageFiles.Length == 0)
                 {
                     Console.Clear();

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mirco\\source\\repos\\Image Renamer\\Image Renamer\\Image Renamer.csproj",
+      "projectUniqueName": "C:\\Users\\mirco\\Documents\\GitHub\\Image-Renamer\\Image Renamer.csproj",
       "projectName": "Image Renamer",
-      "projectPath": "C:\\Users\\mirco\\source\\repos\\Image Renamer\\Image Renamer\\Image Renamer.csproj",
+      "projectPath": "C:\\Users\\mirco\\Documents\\GitHub\\Image-Renamer\\Image Renamer.csproj",
       "packagesPath": "C:\\Users\\mirco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mirco\\source\\repos\\Image Renamer\\Image Renamer\\obj\\",
+      "outputPath": "C:\\Users\\mirco\\Documents\\GitHub\\Image-Renamer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
