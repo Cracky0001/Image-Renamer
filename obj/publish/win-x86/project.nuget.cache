@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "H1pBudBoMsxMUhR43OWXdSOwfrAXzwSy34ZZNJY/Nf8SRmgAnzUeoXWoCLFtTICrrfrBlJ1DmFDC1BCBHFE0cA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mirco\\source\\repos\\Image Renamer\\Image Renamer\\Image Renamer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mirco\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.16\\microsoft.netcore.app.runtime.win-x86.6.0.16.nupkg.sha512",
+    "C:\\Users\\mirco\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.16\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.16.nupkg.sha512",
+    "C:\\Users\\mirco\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.16\\microsoft.aspnetcore.app.runtime.win-x86.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
