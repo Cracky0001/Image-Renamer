@@ -1,0 +1,2 @@
+C:\Users\mirco\Documents\GitHub\Image-Renamer\bin\Release\net6.0\publish\win-x86\Image Renamer.pdb
+C:\Users\mirco\Documents\GitHub\Image-Renamer\bin\Release\net6.0\publish\win-x86\Image Renamer.exe
