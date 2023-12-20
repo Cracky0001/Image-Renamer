@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mirco\\Documents\\GitHub\\Image-Renamer\\Image Renamer.csproj",
+      "projectUniqueName": "C:\\Users\\mirco\\source\\repos\\Image Renamer\\Image Renamer\\Image Renamer.csproj",
       "projectName": "Image Renamer",
-      "projectPath": "C:\\Users\\mirco\\Documents\\GitHub\\Image-Renamer\\Image Renamer.csproj",
+      "projectPath": "C:\\Users\\mirco\\source\\repos\\Image Renamer\\Image Renamer\\Image Renamer.csproj",
       "packagesPath": "C:\\Users\\mirco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mirco\\Documents\\GitHub\\Image-Renamer\\obj\\publish\\win-x86\\",
+      "outputPath": "C:\\Users\\mirco\\source\\repos\\Image Renamer\\Image Renamer\\obj\\publish\\win-x86\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,6 +65,10 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
             "version": "[6.0.16, 6.0.16]"
           },
           {
